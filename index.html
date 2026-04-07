@@ -381,28 +381,36 @@
                 { t: "Vigilancia y control de la malaria", img: "1SL4OnoisWUoxsxoE9V7-S7lkmXEfrjC0", pdf: "1qiWUxnfz8g7HFAZKR_avbJXeXhEfY0sZ" }
             ] 
        { 
-    name: "20. Programa de Salud Renal", 
-    id: "1aaTIFZCEUgVsNGWRKldc6Sk-IsGNJ3o", 
-    docs: [
-      { t: "Guía Clínica Enfermedad Renal Crónica", img: "19DnfprZ2TZWZltglumYqACHToQzoyMJc", pdf: "1duQh3WjkF43KRgZSpDvOkCILsCw8mXqg" }
-    ] 
-  }, 
-  { 
-    name: "21. Programa de Prevención y Control de Infecciones", 
-    id: "1AdzpPH7a5Q7OhRFjkTetNAYwktUqRH_", 
-    docs: [] 
-  },
-  { 
-    name: "22. Programa de Salud Escolar", 
-    id: "1g3i2PO8NTltgA07yq2fFaHZTAJZG8On-", 
-    docs: [] 
-  },
-  { 
-    name: "23. Programa de Zoonosis", 
-    id: "1SNV8FOtwMw4xcR01GsKC-kwhO1DLKmrs", 
-    docs: [] 
-  } 
-];
+   { 
+            name: "19. Programa de Salud Renal", 
+            id: "1aaTIfZCEUg_VsNGWRKldc6Sk-IsGNJ3o", 
+            docs: [
+                /* Agrega tus documentos aquí siguiendo este formato:
+                { t: "Nombre del Documento", img: "ID_IMAGEN_DRIVE", pdf: "ID_PDF_DRIVE" } 
+                */
+            ] 
+        },
+        { 
+            name: "20. Programa de Enfermedades Infecciosas y Zoonóticas", 
+            id: "19AdzpPH7a5Q7OhRFjkTetNAYwktUqRH_", 
+            docs: [] 
+        },
+        { 
+            name: "21. Programa de Salud Escolar", 
+            id: "1g3i2PO8NTltgA07yq2fFaHZTAJZG80n-", 
+            docs: [] 
+        },
+        { 
+            name: "22. Programa de Enfermedades Transmitidas por Vectores", 
+            id: "11F6406mj9x8F2Mtf7-mDl-rRp2H24sP0", 
+            docs: [] 
+        },
+        { 
+            name: "23. Programa de Zoonosis", 
+            id: "1SNV8FOtwMw4xcR01GsKC-kwhO1DLKmrs", 
+            docs: [] 
+        }
+    ]; // Cierre del array data
     // Detecta iOS y abre el documento correctamente
     function abrirDoc(e, id) {
         const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
