@@ -408,9 +408,9 @@ function renderCards() {
             const card = document.createElement('div');
             card.className = 'card';
             card.onclick = () => openModal(index);
-            const thumb = (p.id && iconosLocales[p.id]) ? iconosLocales[p.id] : 'img/default.jpg';
+            const thumb = (p.id && iconosLocales[p.id]) ? iconosLocales[p.id] : 'https://via.placeholder.com/200x200?text=MSPAS';
             card.innerHTML = `
-                <div class="icon-wrapper"><img src="${thumb}" onerror="this.src='img/default.jpg'"></div>
+                <div class="icon-wrapper"><img src="${thumb}" onerror="this.src='https://via.placeholder.com/200x200?text=MSPAS'"></div>
                 <h3>${p.name}</h3>
                 <div class="btn-view">${matchDocumento && !matchPrograma ? 'Documento Encontrado' : 'Ver Documentos'}</div>
             `;
